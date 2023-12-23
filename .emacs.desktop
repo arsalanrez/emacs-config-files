@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Dec 24 01:37:45 2023
+;; Desktop file format version 208
+;; Emacs version 29.1
+
+;; Global section:
+(setq desktop-saved-frameset nil)
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/init.el" "~/Desktop/main.cpp" "~/.emacs.d/init.el" "~/Desktop/notes.txt" "~/Desktop/main.cpp" "~/.emacs.d/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/barc0de/Desktop/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(auto-complete-mode display-line-numbers-mode font-lock-mode yas-minor-mode flycheck-mode company-mode format-all-mode irony-mode)
+  118
+  '(106 nil)
+  nil
+  nil
+  '((buffer-display-time 25991 23053 237194 80000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (59 88 86 86 88 88 88 88 88 59 59 44 56 59 21 46))))
+

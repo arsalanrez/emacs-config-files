@@ -1,3 +1,20 @@
+;; Kill the *scratch* buffer
+(setq initial-scratch-message nil)
+(kill-buffer "*scratch*")
+
+
+;; Start Emacs in fullscreen mode
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; Define desktop-restore-frames before setting it
+(setq desktop-restore-frames nil)
+
+;; Save and restore the last session
+(desktop-save-mode 1)
+
+
+
+
 ;; using darcual theme
 (use-package dracula-theme
   :ensure t
@@ -94,7 +111,7 @@
 (add-hook 'c-mode-hook 'irony-mode)
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
-
+;; automatically open and colse () {} "" []
 (electric-pair-mode 1)
 
 
@@ -102,7 +119,7 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
-
+;; auto-complete-c-headers
 (defun my:ac-c-header-init()
   (require 'auto-complete-c-headers)
   (add-to-list 'ac-sources 'ac-source-c-headers))
@@ -131,3 +148,5 @@
 (global-set-key (kbd "C-c f c") #'format-all-buffer) ; Format C
 (global-set-key (kbd "C-c f C") #'format-all-buffer) ; Format C++
 (global-set-key (kbd "C-c f j") #'format-all-buffer) ; Format JavaScript
+
+

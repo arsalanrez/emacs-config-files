@@ -1,2 +1,9 @@
 cd ~/.emacs.d/elpa/
 ls
+clang main.cpp -o main
+g++ main.cpp -o main
+./main 
+clear
+g++ main.cpp -o main
+./main 
+./main 
