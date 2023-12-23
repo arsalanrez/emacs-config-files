@@ -1,0 +1,2 @@
+cd ~/.emacs.d/elpa/
+ls
